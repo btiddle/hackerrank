@@ -1,0 +1,13 @@
+discussion_solution_1.txt
+
+s = input()
+l = len(s)
+n = len(set(s))
+
+if l%n == 0:
+    print('YES')
+else:
+    if l%n == 1 or l%(l%n) == 1:
+        print('YES')
+    else:
+        print('NO')

@@ -1,0 +1,19 @@
+
+                  a   b   c  d  e
+
+aabbcc     YES    2   2   2           count.size = 1
+
+aabbccc    YES    2   2   3           count.size = 2 && count[m] == 1 && count[m] - count[n] == 1
+
+aabbc      YES    2   2   1           count.size = 2 && count[m] == 1 && count[m] - count[m] == 1
+
+abccc      NO     1   1   3           count.size = 2 && count[m] == 1 && count[m] - count[n] > 1
+
+baacdd     NO     2   1   1  2        count.size == 2 && no count[m] =  1
+
+abcddee    NO     1   1   1  2  2     count.size == 2 && no count[m] =  1
+
+abbcc      NO     1   2   3           count.size > 2
+
+
+count.size 
